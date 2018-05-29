@@ -1,1 +1,1 @@
-# AlgoCasts
+# Algorithms in Javascript
