@@ -12,7 +12,7 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {
+/* function fizzBuzz(n) {
     for (let i = 1; i <= n; i++) {
         if ((i % 3 == 0) && (i % 5 == 0)) {
             console.log("fizzbuzz")
@@ -24,6 +24,19 @@ function fizzBuzz(n) {
             console.log(i)
         }
     }
+} */
+
+function fizzBuzz(l, r) {
+    oddNumbers = []
+    for (i = l; i <= r; i++) { 
+        if (i % 2 != 0){
+            oddNumbers.push(i)
+        }
+    }
+    return oddNumbers
+
 }
+
+console.log()
 
 module.exports = fizzBuzz;
