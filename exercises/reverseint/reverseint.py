@@ -1,23 +1,19 @@
-"""  
-Code Challenge:
+""" Code Challenge:
+Implement a function that reverses the order of the digit values.
 
-Given an integer, return an integer that is the reverse
-ordering of digits.
-
-Examples:
 reverseInt(456) === 654
-reverseInt(500) === 5
-reverseInt(-15) === -51
+reverseInt(700) === 7
+reverseInt(-123) === -321
 reverseInt(-90) === -9  
 """
 
-def reverse_int(integer):    
-    result = None
-    return result
-
+def reverse_int(integer):
+    sign = [1, -1][integer < 0]
+    return int(str(abs(integer))[::-1]) * sign
 
 print(reverse_int(456))
-
+print(reverse_int(700))
+print(reverse_int(-123))
 
 
 
