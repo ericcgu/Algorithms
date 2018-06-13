@@ -1,10 +1,33 @@
-import string
+#Code Challenge:
+#  Implement a function to find the longest character or letter in a string.
 
-x = 'hello'.lower()
-chars = dict.fromkeys(string.ascii_lowercase, 0)
-for s in x:
-    chars[s]+= 1
+#Example:
+#  max_char('Hello !') === 'l'
 
-chars = {x:y for x,y in chars.items() if y!=0}
-maxValKey = max(chars, key=chars.get)
-print(str(maxValKey))
+def max_char(string):
+
+    return ''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print('Passed Test 1' if max_char(['Hello !']) == 'l' else 'Test 1 Incomplete')
+
+
+
